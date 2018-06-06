@@ -302,6 +302,11 @@ public class TCAPDialogWrapper implements Dialog, TCAPEvent {
         this.wrappedDialog.setIdleTaskTimeout(idleTaskTimeoutMs);
     }
 
+    @Override
+    public long getStartTimeDialog() {
+        return this.wrappedDialog.getStartTimeDialog();
+    }
+
 	/*
 	 * (non-Javadoc)
 	 * 
